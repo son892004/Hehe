@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Quiz 2A - Bài 4</title>
+<title>Quiz 2A - Bài 5</title>
 <style>
   :root {
     --primary: #059669;
@@ -200,8 +200,8 @@
   <!-- Quiz Section -->
   <div id="quiz-section">
     <header>
-      <h1>🇰🇷 Quiz 2A — Bài 4</h1>
-      <div class="sub">Chủ đề: 옷이 좀 큰 것 같아요 (Trang phục & Mua sắm)</div>
+      <h1>🇰🇷 Quiz 2A — Bài 5</h1>
+      <div class="sub">Chủ đề: 어디에 가면 좋을까요? (Du lịch & Lịch trình)</div>
     </header>
 
     <div class="progress-container">
@@ -228,7 +228,7 @@
         <option value="10">10 câu</option>
         <option value="20">20 câu</option>
         <option value="30">30 câu</option>
-        <option value="59">Tất cả (59 câu)</option>
+        <option value="81">Tất cả (81 câu)</option>
       </select>
     </div>
   </div>
@@ -244,68 +244,90 @@
 
 <script>
   const WORDS = [
-    // S【4과】
-    {"ko": "블라우스", "vi": "Áo sơ mi nữ / Áo blouse"},
-    {"ko": "스웨터", "vi": "Áo len"},
-    {"ko": "양복", "vi": "Bộ âu phục / Vest"},
-    {"ko": "티셔츠", "vi": "Áo phông"},
-    {"ko": "청바지", "vi": "Quần jeans / Quần bò"},
-    {"ko": "양말", "vi": "Tất / Vớ"},
-    {"ko": "넥타이", "vi": "Cà vạt"},
-    {"ko": "장갑", "vi": "Găng tay"},
-    {"ko": "스카프", "vi": "Khăn quàng cổ"},
-    {"ko": "입다", "vi": "Mặc (quần, áo)"},
-    {"ko": "쓰다", "vi": "Đội (mũ), đeo (kính)"},
-    {"ko": "끼다", "vi": "Đeo (găng tay, nhẫn)"},
-    {"ko": "하다", "vi": "Thắt (cà vạt), quàng (khăn)"},
-    {"ko": "신다", "vi": "Đi / Mang (giày, dép, tất)"},
-    {"ko": "마음에 들다", "vi": "Hài lòng / Thích"},
-    {"ko": "마음에 안 들다", "vi": "Không hài lòng"},
-    {"ko": "잘 어울리다", "vi": "Rất hợp"},
-    {"ko": "잘 안 어울리다", "vi": "Không hợp lắm"},
-    {"ko": "사이즈", "vi": "Kích cỡ / Size"},
-    {"ko": "가격", "vi": "Giá cả"},
-    {"ko": "색깔", "vi": "Màu sắc"},
-    {"ko": "길이", "vi": "Chiều dài"},
-    {"ko": "좀 크다", "vi": "Hơi to / Hơi rộng"},
-    {"ko": "잘 맞다", "vi": "Vừa vặn"},
-    {"ko": "좀 작다", "vi": "Hơi nhỏ / Hơi chật"},
-    {"ko": "비싸다", "vi": "Đắt"},
-    {"ko": "싸다", "vi": "Rẻ"},
-    {"ko": "밝다", "vi": "Sáng"},
-    {"ko": "어둡다", "vi": "Tối"},
-    {"ko": "길다", "vi": "Dài"},
-    {"ko": "짧다", "vi": "Ngắn"},
-    {"ko": "옷값", "vi": "Giá tiền quần áo"},
-    {"ko": "맛", "vi": "Hương vị / Vị"},
-    {"ko": "내용", "vi": "Nội dung"},
-    {"ko": "디자인", "vi": "Thiết kế"},
-    {"ko": "유행하다", "vi": "Thịnh hành / Mốt"},
-    {"ko": "훨씬", "vi": "Hơn hẳn / Hơn nhiều"},
-    {"ko": "시골", "vi": "Nông thôn / Quê"},
-    {"ko": "건강하다", "vi": "Khỏe mạnh"},
-    {"ko": "굽이 높다", "vi": "Đế cao / Gót cao"},
-    {"ko": "교환하다", "vi": "Đổi (hàng)"},
-    {"ko": "환불하다", "vi": "Hoàn tiền / Trả lại hàng"},
-    {"ko": "등산화", "vi": "Giày leo núi"},
-    {"ko": "필요하다", "vi": "Cần thiết"},
-    {"ko": "절약하다", "vi": "Tiết kiệm"},
-    {"ko": "직접", "vi": "Trực tiếp"},
-    {"ko": "주문하다", "vi": "Đặt hàng / Gọi món"},
-    {"ko": "면접", "vi": "Phỏng vấn"},
-    {"ko": "물어보다", "vi": "Hỏi / Hỏi thăm"},
-    {"ko": "노량진", "vi": "Noryangjin"},
-    {"ko": "수산 시장", "vi": "Chợ hải sản"},
-    {"ko": "동네", "vi": "Xóm / Làng / Khu phố"},
-    {"ko": "싱싱하다", "vi": "Tươi / Tươi sống"},
-    {"ko": "넣다", "vi": "Bỏ vào / Cho vào"},
-    {"ko": "고추장", "vi": "Tương ớt Hàn Quốc"},
+    // S【5과】
+    {"ko": "기간", "vi": "Thời gian / Thời hạn"},
+    {"ko": "교통편", "vi": "Phương tiện giao thông"},
+    {"ko": "숙소", "vi": "Chỗ ở / Nơi lưu trú"},
+    {"ko": "요금", "vi": "Cước phí / Giá tiền"},
+    {"ko": "일정", "vi": "Lịch trình"},
+    {"ko": "항공료", "vi": "Vé máy bay / Cước phí hàng không"},
+    {"ko": "숙박비", "vi": "Chi phí lưu trú / Tiền phòng"},
+    {"ko": "식비", "vi": "Tiền ăn"},
+    {"ko": "입장료", "vi": "Vé vào cửa / Phí vào cổng"},
+    {"ko": "여행자 보험료", "vi": "Phí bảo hiểm du lịch"},
+    {"ko": "항공권", "vi": "Vé máy bay"},
+    {"ko": "왕복", "vi": "Khứ hồi"},
+    {"ko": "편도", "vi": "Một chiều"},
+    {"ko": "출발", "vi": "Xuất phát / Khởi hành"},
+    {"ko": "도착", "vi": "Đến nơi / Đến"},
+    {"ko": "출국 날짜", "vi": "Ngày xuất cảnh"},
+    {"ko": "귀국 날짜", "vi": "Ngày về nước"},
+    {"ko": "좌석", "vi": "Chỗ ngồi / Ghế"},
+    {"ko": "일반석", "vi": "Hạng phổ thông"},
+    {"ko": "비즈니스석", "vi": "Hạng thương gia"},
+    {"ko": "일등석", "vi": "Hạng nhất"},
+    {"ko": "아마", "vi": "Có lẽ / Có thể"},
+    {"ko": "담배를 끊다", "vi": "Bỏ thuốc lá"},
+    {"ko": "돈을 모으다", "vi": "Tiết kiệm tiền"},
+    {"ko": "전통문화", "vi": "Văn hóa truyền thống"},
+    {"ko": "느끼다", "vi": "Cảm nhận / Cảm thấy"},
+    {"ko": "패키지여행", "vi": "Du lịch trọn gói (Tour)"},
+    {"ko": "알아보다", "vi": "Tìm hiểu / Hỏi thăm"},
+    {"ko": "공연", "vi": "Buổi biểu diễn"},
+    {"ko": "거리", "vi": "Khoảng cách / Cự ly"},
+    {"ko": "며칠", "vi": "Mấy ngày / Ngày mấy"},
+    {"ko": "바라다", "vi": "Mong muốn / Hi vọng"},
+    {"ko": "박 (1박 2일)", "vi": "Đêm (1 đêm 2 ngày)"},
+    {"ko": "자세하다", "vi": "Chi tiết / Tỉ mỉ"},
+    {"ko": "여행지", "vi": "Điểm du lịch"},
+    {"ko": "방법", "vi": "Phương pháp / Cách thức"},
+    {"ko": "생각하다", "vi": "Suy nghĩ"},
+    {"ko": "대학원", "vi": "Cao học"},
+    {"ko": "마치다", "vi": "Hoàn thành / Kết thúc"},
+    {"ko": "여행 상품", "vi": "Sản phẩm du lịch / Tour"},
+    {"ko": "포함되어 있다", "vi": "Được bao gồm"},
+    {"ko": "당일", "vi": "Trong ngày"},
+    {"ko": "추천하다", "vi": "Giới thiệu / Gợi ý"},
+    {"ko": "부석사", "vi": "Chùa Buseok"},
+    {"ko": "거제도", "vi": "Đảo Geoje"},
+    {"ko": "빈방", "vi": "Phòng trống"},
+    {"ko": "가이드", "vi": "Hướng dẫn viên du lịch"},
+    {"ko": "동서양", "vi": "Đông Tây"},
+    {"ko": "사이", "vi": "Khoảng giữa / Giữa"},
+    {"ko": "동양", "vi": "Phương Đông"},
+    {"ko": "서양", "vi": "Phương Tây"},
+    {"ko": "오래되다", "vi": "Lâu đời / Cũ"},
+    {"ko": "건축물", "vi": "Công trình kiến trúc"},
+    {"ko": "자연", "vi": "Tự nhiên / Thiên nhiên"},
+    {"ko": "등", "vi": "Vân vân (v.v...)"},
+    {"ko": "다양하다", "vi": "Đa dạng / Phong phú"},
+    {"ko": "가지고 가다", "vi": "Mang đi / Cầm đi"},
+    {"ko": "콘도", "vi": "Căn hộ du lịch / Condo"},
+    {"ko": "펜션", "vi": "Biệt thự nghỉ dưỡng / Pension"},
+    {"ko": "게스트하우스", "vi": "Nhà khách / Guesthouse"},
+    {"ko": "민박", "vi": "Nhà dân cho thuê trọ"},
+    {"ko": "이용하다", "vi": "Sử dụng"},
+    {"ko": "한옥", "vi": "Nhà truyền thống Hanok"},
+    {"ko": "전통적", "vi": "Mang tính truyền thống"},
+    {"ko": "분위기", "vi": "Bầu không khí"},
+    {"ko": "대통령", "vi": "Tổng thống"},
+    {"ko": "종류", "vi": "Loại / Chủng loại"},
+    {"ko": "등록금", "vi": "Tiền học phí"},
 
-    // W【4과】
-    {"ko": "결혼식", "vi": "Lễ kết hôn / Đám cưới"},
-    {"ko": "헤어지다", "vi": "Chia tay"},
-    {"ko": "돈을 벌다", "vi": "Kiếm tiền"},
-    {"ko": "바라다", "vi": "Mong muốn / Hi vọng"}
+    // W【5과】
+    {"ko": "이용하다", "vi": "Sử dụng / Dùng"},
+    {"ko": "알려 주다", "vi": "Cho biết / Cho hay"},
+    {"ko": "성인", "vi": "Người lớn / Trưởng thành"},
+    {"ko": "일기 예보", "vi": "Dự báo thời tiết"},
+    {"ko": "아마", "vi": "Có lẽ"},
+    {"ko": "길이 막히다", "vi": "Tắc đường / Kẹt xe"},
+    {"ko": "싸게 사다", "vi": "Mua rẻ"},
+    {"ko": "건강", "vi": "Sức khỏe"},
+    {"ko": "무료", "vi": "Miễn phí"},
+    {"ko": "조용히", "vi": "Lặng lẽ / Yên tĩnh"},
+    {"ko": "준비운동하다", "vi": "Tập bài tập chuẩn bị / Khởi động"},
+    {"ko": "결정하다", "vi": "Quyết định"},
+    {"ko": "졸업하다", "vi": "Tốt nghiệp"}
   ];
 
   let pool = [];
@@ -424,13 +446,13 @@
     finalScoreEl.textContent = `${score}/${pool.length} (${percentage}%)`;
 
     if (percentage >= 90) {
-      resultMessageEl.textContent = "🔥 Xuất sắc! Bạn thuộc từ vựng Bài 4 rất siêu.";
+      resultMessageEl.textContent = "🔥 Xuất sắc! Bạn thuộc từ vựng Bài 5 rất siêu.";
     } else if (percentage >= 70) {
       resultMessageEl.textContent = "👏 Khá tốt! Luyện tập thêm chút nữa là hoàn hảo.";
     } else if (percentage >= 50) {
       resultMessageEl.textContent = "💪 Tạm ổn! Hãy thử lại để tăng điểm nhé.";
     } else {
-      resultMessageEl.textContent = "📚 Cố lên! Hãy ôn lại từ vựng Bài 4 và làm lại.";
+      resultMessageEl.textContent = "📚 Cố lên! Hãy ôn lại từ vựng Bài 5 và làm lại.";
     }
   }
 
